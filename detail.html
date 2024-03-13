@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--NavBar Section-->
+    <div class="navbar">
+        <img src="logo.png" class="logo">
+        <div class="navbarButtons">
+            <nav class="navigation " id="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="forums.html">Forums</a></li>
+                    <li class="nav-item"><a href="posts.html">Posts</a></li>
+                    <li class="nav-item"><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
+            <button class="auth">Log In</button>
+            <button class="auth">Sign Up</button>
+        </div>
+    </div>
+
+    <!--SearchBox Section-->
+    <div class="search-box" style="width:75%; margin: 50px 50px 0px 60px">
+            <select name="" id="select">
+                <option value="Everything">Everything</option>
+                <option value="Titles">Titles</option>
+                <option value="Descriptions">Descriptions</option>
+            </select>
+            <input type="text" name="q" placeholder="search ...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+    </div>    
+
+
+    <div class="container">
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="forums.html">MyForum - Forums</a> >> <a href="posts.html">Popular Subforums</a> >> <a href="detail.html">Recent Topics</a></span>
+        </div>
+
+        <!--Topic Section-->
+        <div class="topic-container">
+            <!--Original thread-->
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Topic: Recognizing the Signs and Taking Action (Read 225 Times)</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href=""><u>Emily Johnson</u> </a><a><i class="fa fa-user-plus"></i></a></div>
+                    <div>Clinical Nurse Specialist</div>
+                    <img src="user.jpg" alt="">
+                    <div>Posts: <u>15</u></div>
+                    <div>Points: <u>110</u></div>
+                </div>
+                <div class="content-container">
+                <div class="content">
+                    <p>Compassion fatigue can manifest in subtle ways, often creeping up on us without warning. It's crucial to recognize the signs early and take proactive steps to address them. If you find yourself feeling emotionally drained, experiencing a lack of motivation, or becoming increasingly cynical towards your patients, these could be signs of compassion fatigue.</p><br>
+                    <p>One effective strategy for coping with compassion fatigue is self-awareness. Take time to reflect on your emotions and acknowledge when you're feeling overwhelmed. Practice self-care rituals that rejuvenate your mind, body, and spirit. Whether it's carving out time for hobbies, exercise, or spending quality time with loved ones, prioritize activities that replenish your energy and bring you joy.</p><br>
+                    <p>Seeking support from colleagues and professional resources is also essential. Don't hesitate to lean on your fellow nurses for empathy and understanding. Participating in support groups or seeking guidance from a mentor can provide valuable insights and reassurance that you're not alone in your struggles.</p><br>
+                    <p>Above all, remember that it's okay to ask for help when you need it. Seeking counseling or therapy from a mental health professional specialized in working with healthcare providers can offer invaluable support and guidance in navigating compassion fatigue. By prioritizing self-awareness, self-care, and seeking support, you can effectively cope with compassion fatigue and continue to provide compassionate care to your patients.</p><br>
+                </div>
+                <br>
+                <hr>
+                <div class="acknoweldgement">
+                    <p>With Regards: Emily Johnson <i class="fa fa-user-plus"></i></p>
+                    <div class="activity">
+                        <button onclick="showComment()"><i class="fa fa-comment"></i> Comment</button>
+                        <button><i class="fa fa-share"></i> Share</button>
+                        <button><i class="fa fa-thumbs-up"></i> Like</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+            <input type="submit" value=" Submit " onclick="hideComment()">
+        </div>
+
+        <!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href=""><u>Rajesh Sharma</u> </a><a><i class="fa fa-user-plus"></i></a></div>
+                    <div>Certified Registered Nurse Anesthetist</div>
+                    <img src="user.jpg" alt="">
+                    <div>Posts: <u>7</u></div>
+                    <div>Points: <u>83</u></div>
+                </div>
+                <div class="content-container">
+                    <p>In the relentless world of nursing, self-care is not a luxury but a necessity. Take moments to pause, breathe, and engage in activities that replenish your spirit. Whether it's a walk in nature, meditation, or simply indulging in your favorite hobby, prioritize self-care to combat compassion fatigue.</p>
+                    <br>
+                    <br>
+                    <div class="activity">
+                        <button onclick="showReply1()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area1">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value=" Submit " onclick="hideReply1()">
+        </div>
+
+
+        <!--Another Comment With replies-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href=""><u>Sarah Patel</u> </a><a><i class="fa fa-user-plus"></i></a></div>
+                    <div>Registered Nurse</div>
+                    <img src="user.jpg" alt="">
+                    <div>Posts: <u>3</u></div>
+                    <div>Points: <u>45</u></div>
+                </div>
+                <div class="content-container">
+                    <p>Amidst the emotional toll of nursing, remember you're not alone. Reach out to your peers for support and understanding. Sharing experiences and burdens can lighten the load and remind you that compassion fatigue is a shared struggle. Together, we can navigate these challenges and emerge stronger.</p>
+                    <br>
+                    <br>
+                    <div class="activity">
+                        <button onclick="showReply2()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area2">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value=" Submit " onclick="hideReply2()">
+        </div>
+    </div>
+
+    <!-- Forum Info -->
+    <div class="forum-info">
+        <div class="chart">
+            MyForum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
+        </div>
+        <span><u>5,369</u> Posts in <u>48</u> Topics by <u>8,124</u> Members.</span><br>
+        <span>Latest post: <b><a href="">Random post</a></b> on Dec 15 2021 By <a href="">RandomUser</a></span>.<br>
+        <span>Check <a href="">the latest posts</a> .</span><br>
+    </div>
+    <hr>
+    <footer>
+        <span>&copy;  Sattwikee Ghosh | All Rights Reserved</span>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
