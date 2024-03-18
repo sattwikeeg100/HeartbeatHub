@@ -34,9 +34,4 @@ Let's work together to make a positive impact on global health through Heartbeat
 ## Getting Started
 To get started with HeartbeatHub, simply clone the repository to your local machine and open the HTML files in your preferred web browser. Feel free to explore the website and provide feedback or suggestions for improvement.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 Let's unite and make a difference in global healthcare! 🌍💉💙
