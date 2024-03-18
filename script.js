@@ -9,7 +9,6 @@ function showReply1(){
     var replyArea = document.getElementById("reply-area1");
     replyArea.classList.remove("hide");
 }
-
 function showReply2(){
     var replyArea = document.getElementById("reply-area2");
     replyArea.classList.remove("hide");
